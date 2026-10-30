@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.theluckystrike/minimum-wage-mcp",
+  "description": "US state minimum wage 2026-2027: rates, tipped wages and scheduled increases for 50 states and DC.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/theluckystrike/minimum-wage-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://statewage.com",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://minimum-wage-mcp.lipmichal.workers.dev/mcp" }
+  ]
+}

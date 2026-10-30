@@ -1,0 +1,30 @@
+{
+  "name": "minimum-wage-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for US state minimum wage rates: 2026 rates, tipped wages, and scheduled 2027 increases for all 50 states and DC.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/minimum-wage-mcp",
+  "repository": { "type": "git", "url": "https://github.com/theluckystrike/minimum-wage-mcp.git" },
+  "homepage": "https://statewage.com",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "minimum-wage", "tipped-wage", "state-minimum-wage", "payroll", "labor-law"],
+  "bin": { "minimum-wage-mcp": "dist/stdio.js" },
+  "main": "dist/stdio.js",
+  "files": ["dist", "README.md", "LICENSE", "DATA_SOURCES.md"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/stdio.js",
+    "test": "npm run build && node --test",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.40.0"
+  }
+}
