@@ -37,7 +37,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "minimum-wage": {
       "command": "npx",
-      "args": ["-y", "github:theluckystrike/minimum-wage-mcp"]
+      "args": ["-y", "minimum-wage-mcp"]
     }
   }
 }
@@ -46,7 +46,7 @@ Add to `claude_desktop_config.json`:
 ### Claude Code
 
 ```
-claude mcp add minimum-wage -- npx -y github:theluckystrike/minimum-wage-mcp
+claude mcp add minimum-wage -- npx -y minimum-wage-mcp
 ```
 
 Or use the hosted server:
